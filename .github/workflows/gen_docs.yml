@@ -18,11 +18,17 @@ jobs:
       - name: Updating
         run: sudo apt update -y
       
-      - name: Installing doxygen and clang
-        run: sudo apt install -y doxygen
+      - name: Installing python3
+        run: sudo apt install -y python3 python3-pip
       
-      - name: Formatting all .cpp and .h files
-        run: doxygen .doxygen.conf
+      - name: Installing requirements
+        run: pip3 install -r requirements.txt
+
+      - name: Installing sphinx
+        run: pip3 install sphinx
+
+      - name: Formatting all python files
+        run: make html
 
       - name: Commit and push changes
         run: |

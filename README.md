@@ -13,3 +13,8 @@
 
 ### Дополнительно:
 - Добавить поддержку динамического изменения приоритетов процессов и обработку deadlock
+
+### Установка:
+- `git clone https://github.com/pErfEcto2/queue_scheduler && cd queue_scheduler`
+- `pip3 install -r requirements.txt`
+
