@@ -24,9 +24,6 @@ jobs:
       - name: Installing requirements
         run: pip3 install -r requirements.txt
 
-      - name: Installing sphinx
-        run: pip3 install sphinx
-
       - name: Formatting all python files
         run: make html
 
